@@ -1,5 +1,7 @@
 package web.crudspringboot.model;
 
+import org.hibernate.annotations.NaturalId;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,6 +19,7 @@ public class User {
     private int age;
 
     @Column(name = "email")
+    @NaturalId
     private String email;
 
     public User() {
